@@ -8,34 +8,216 @@
    <meta name="copyright" content="2025 company.com">
    <meta name="viewport" content="width=device-width, iniial-scale=1.0">
    <meta name="description" content="decentralized exchange">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <title>FreePad.io</title>
    <link rel="stylesheet" href="style.css">
-   <title></title>
-</head>
+   <link rel="icon" href="logoFreepad.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <body>
-   <nav>
-      <div class="nav-container" style="width: ; height: z;">
-          <img class="logo" src="logo.png">
-          <div class="links">
-          <div class="link"><a href="index.html">Home</a></div>
-          <div class="link"><a href="about.html">About</a></div>
-          <div class="link"><a href="https://wallet.coinbase.com/nft/mint/eip155:8453:erc721:0xfa3Fe19A87Fc952012cB0ef08CfE304bD2Ee1c9f">Mints</a></div>
-          <div class="link"><a href="partnerships.html">Partnerships</a></div>
-          <div class="link"><a href="contact.html">Contact Us</a></div>
-          <button id="button"><a href="https://x.com/Base_Summit?t=PaJYlpLC4rr4Ou5tJCAbhg&s=09">Join The Community</a></button>
-         </div>
-         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-         </div>
-      <div class="dropdown">
-          <div class="links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="https://wallet.coinbase.com/nft/mint/eip155:8453:erc721:0xfa3Fe19A87Fc952012cB0ef08CfE304bD2Ee1c9f">Mint</a>
-              <div class="link"><a href="partnerships.html">Partnerships</a></div>
-              <a href="contact.html">Contact us</a>
-              <button id="button"><a href="https://x.com/Base_Summit?t=PaJYlpLC4rr4Ou5tJCAbhg&s=09">Join The Community</a></button>
-              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <div class="logo">
+                        <img class="logo-img" src="logoFreepad.png">
+                        <div class="logo-text">Free<span>Pad</span></div>
+                    </div>
+                    <div id="logo-text">The #1 Multi-Chain Launchpad.</div>
+                </div>
+                <div class="links">
+                <div class="link"><a href="index.html">Home &#128293;</a></div>
+                <div class="link"><a href="doc.html">About &#x1F914;</a></div>
+                <div class="link"><a href="#">KYC &#128274;</a></div>
+                <div class="links-btn">
+                    <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
+                    <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                   </div>
+               </div>
+               <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+               </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Home &#128293;</a>
+                    <a href="doc.html">About &#x1F914;</a>
+                    <a href="#">KYC &#128274;</a>
+                    <div class="links-btn">
+                        <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
+                        <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                       </div>
+                   </div>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+        <main>
+          <section id="hero">
+            <div class="typewriter"><span class="typewriter-text"></span><label style="color: white;" for="">|</label></div>
+            <div class="main_h1">
+              <h1>
+                Join the best AI, GameFi & DeFi IDOs on <span class="">FreePad</span>
+              </h1>
+              <p>
+                Get early-access to top-tier safest IDOs in a
+               guaranteed way with one-time NFT access.
+              </p>
+              <div class="sales_stats">
+                <div class="stats">
+                  <p></p><span>NFT Mint Coming Soon...</span>
+                </div>
+              </div>
+              <div class="blocks">
+                <h3>Supported blockchain</h3>
+                <p> All ETHEREUM VIRTUAL MACHINES  AND NON-EVMs</p>
+                </div>
+          </section>
+          <section id="IDOs">
+            <div style="display: flex; justify-content: space-around;">
+              <div id="ido-btn-container">
+                <a href="#"><button class="ido-btn">Upcoming [0]</button></a>
+                <a href="#"><button class="ido-btn">ended [0]</button></a>
+                <a href="#"><button class="ido-btn">ended NFT [0]</button></a>
+              </div>
+              <div>
+                <!-- <label> any chain &#9662;</label> -->
+                <select id="chain-dropdown" style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="select-chain">
+                  <a href="#"</a>><option value="" >any chain</option></a>
+                  <a href="#"><option value="">Polygon<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Zksync<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Ethereum<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Arbitrum<img src="" alt=""></option></a>
+                  <a href="#"><option value="">BNB chain<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Solana<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Phantom Opera<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Terra<img src="" alt=""></option></a>
+                  <a href="#"><option value="">Base<img src="" alt=""></option></a>
+                </select>
+              </div>
+              <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text"></div>
+            </div>
+            <p style="color: white; font-size: x-large; font-weight: 300; padding: 50px;">Upcoming IDOs</p>
+            <div class="ido-card-container">
+              <div data-aos="fade-up" class="ido-card" >
+                <a href="#">
+                  <p class="ido-title"></p>
+                  <!-- <button class="ido-status"></button> -->
+                  <!-- <img class="ido-img" src="metaclash.png" alt="">
+                  <img class="ido-chain-img" src="polygon.png" alt=""> -->
+                  <div class="social-link-img">
+                    <!-- <a href="#"><img class="social-links-img" src="telegram.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="advertising.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="twitter (1).png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="medium.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="globe.png" alt=""></a> -->
+                  </div>
+                  <p class="ido-token-discription">
+                  </p>
+                  <p>
+                    <!-- Total Raise $200 002
+                    Starts Jun 29, 14:00 UTC
+                    Price  1 RAISE = 0.01500015 USDT -->
+                    <p></p>
+                  </p>
+                </a>
+              </div>
+              
+              <div data-aos="fade-up" class="ido-card" >
+                <a href="#">
+                  <!-- <p class="ido-title"></p> -->
+                  <!-- <button class="ido-status"></button> -->
+                  <!-- <img class="ido-img" src="metaclash.png" alt="">
+                  <img class="ido-chain-img" src="polygon.png" alt=""> -->
+                  <div class="social-link-img">
+                    <!-- <a href="#"><img class="social-links-img" src="telegram.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="advertising.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="twitter (1).png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="medium.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="globe.png" alt=""></a> -->
+                  </div>
+                  <p class="ido-token-discription">
+                  </p>
+                  <!-- <p>
+                    Total Raise $200 002
+                    Starts Jun 29, 14:00 UTC
+                    Price  1 RAISE = 0.01500015 USDT
+                    <p></p>0% -->
+                  </p>
+                </a>
+              </div>
+              <div data-aos="fade-up" class="ido-card" >
+                <a href="#">
+                  <p class="ido-title"></p>
+                  <!-- <button class="ido-status"></button>
+                  <img class="ido-img" src="" alt="">
+                  <img class="ido-chain-img" src="" alt="">
+                  <div class="social-link-img">
+                    <a href="#"><img class="social-links-img" src="telegram.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="advertising.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="twitter (1).png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="medium.png" alt=""></a>
+                    <a href="#"><img class="social-links-img" src="globe.png" alt=""></a>
+                  </div> -->
+                  <p class="ido-token-discription">
+                  </p>
+                  <!-- <p>
+                    Total Raise $200 002
+                    Starts Jun 29, 14:00 UTC
+                    Price  1 RAISE = 0.01500015 USDT
+                    <p></p>0% -->
+                  </p>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Logo and Description -->
+            <div class="footer-text">
+              <h1 class="footer-logo">FREEPAD</h1>
+              <p class="footer-tagline">Making DeFi a Safer Place.</p>
+              <p class="footer-description">Free is a decentralized multi-chain fundraising platform enabling projects to raise capital and promise safety to early stage participants. Stake TrustPad tokens to get priority-access to promising projects.</p>
+            </div>
+        
+            <!-- General Section -->
+            
+            <div class="footer-general">
+              <h4 class="footer-heading">Help</h4>
+              <ul class="footer-links">
+                <li><a href="ido.html" class="footer-link">How to participate in IDO</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li><a href="doc.html" class="footer-link">Documentation</a></li>
+              </ul>
+            </div>
+        
+            <!-- Communities Section -->
+            <div class="social">
+              <h4 class="footer-heading">Communities</h4>
+              <ul class="footer-links">
+                <li><a href="https://t.me/Freepadofficial" class="footer-link"><img src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000" alt="">Telegram</a></li>
+                <li><a href="https://x.com/freepad_io?s=21" class="footer-linkk"><img src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000" alt="">Twitter (X)</a></li>
+                <li><a href="https://t.me/FreePad_io" class="footer-linkk"><img src="https://img.icons8.com/?size=100&id=11149&format=png&color=000000" alt="">Annoucement</a></li>
+              </ul>
+            </div>
+        
+            <!-- Token Section -->
+            <div class="footer-token">
+              <h4 class="footer-heading">Token</h4>
+              <ul class="footer-links">
+                <li><a href="https://www.coingecko.com" class="footer-link">CoinGecko</a></li>
+                <li><a href="https://www.coinmarketcap.com" class="footer-link">CoinMarketCap</a></li>
+                <li><a href="https://www.cryptorank.io" class="footer-link">CryptoRank</a></li>
+                <li><a href="https://www.pancakeswap.finance" class="footer-link">PancakeSwap</a></li>
+              </ul>
+            </div>
           </div>
-      </div>
-  </nav>
+        
+          <!-- Bottom Footer -->
+          <div class="footer-bottom">
+            <p>&copy; 2025 FreePad. All rights reserved.</p>
+          </div>
+        </footer>
+        <!-- <img src="logoFreepad.png" alt=""> -->
+  <script src="script.js"></script>
 </body>
 </html>
