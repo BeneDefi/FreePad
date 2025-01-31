@@ -14,8 +14,8 @@ AOS.init({
 
 const texts = [
     "WELCOME TO FREEPAD",
-    "SAFEST LAUNCPAD",
-    "AND MULTI-CHAIN"
+    // "SAFEST LAUNCPAD",
+    // "AND MULTI-CHAIN"
 ]
 
 let speed  =100;

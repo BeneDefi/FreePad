@@ -11,14 +11,14 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    /* background: linear-gradient(195.36deg, #00185c 9.49%, #000b49 50.15%, #04012b 88.8%); */
-    background-image: linear-gradient(#000, rgb(66, 66, 221), rgb(22, 16, 5));
+    background-color: #0a0a1a;
 }
 
 nav{
     width: 100%;
     height: 10vh;
     position: sticky;
+    background-color: #1a1a2e;
 }
 
 .nav-container{
@@ -36,8 +36,6 @@ nav{
 }
 
 .logo span{
-    /* color: gold;
-    text-shadow: 0 0 10px gold; */
     color: darkorange;
     font-weight: bold; 
     background: linear-gradient(to right, #ff7e5f, #feb47b); 
@@ -118,12 +116,10 @@ nav{
 .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
-    /* margin-left: 350px; */
 }
 
 .typewriter-text{
     color: linear-gradient(45deg, #FFB800, #F7931A, #FF6A00);;
-    /* text-shadow: 0 0 10px gold; */
 }
 
 .logo{
@@ -172,85 +168,57 @@ nav{
     margin-top: 30px;
 }
 
-.main_h1{
-  font-size: x-large;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.main_h1 span{
-  font-size: 55px;
-}
-
-span {
-  color: darkorange;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bolder;
-  font-size: x-large;
-}
-
-#hero {
-  height: 500px;
-  color: gainsboro;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.sales_stats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: large;
-  color: white;
-}
-
-.stats {
-  /* width: 250px; */
-  height: 100px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  margin: 10px;
-  padding: 50px;
-  background: rgba(0, 0, 0, 0.5); 
-  backdrop-filter: blur(5px); 
-  z-index: -1;
-}
-
-.stats p {
-  font-size: smaller;
-}
-
-.stats span{
-  font-size: xx-large;
-}
-
-.blocks {
-  color: rgb(184, 180, 180);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #f7931a;}
-
-  .blocks h3{
-     color: aliceblue;
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e, #0a0a1a);
+    padding: 100px 10%;
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #87CEEB ;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+   
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    
+   
+    
+  }
+  
+  .hero-buttons .btn-primary, .hero-buttons .btn-secondary {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+   
+  }
+  
+  .hero-buttons .btn-primary {
+    background-color: #1a1a2e;
+    /* width: 500px; */
+    /* height: 200px; */
+    font-size: 30px;
+    color: #87CEEB;
+     border: 0.5px solid navy;
+   
+  }
+  
+  .hero-buttons .btn-secondary {
+    background-color: #2d2d4d;
+    color: #ffffff;
   }
 
-  .blocks p{
-    font-weight: bold;
-  }
 .ido-btn {
   width: 150px;
   height: 50px;
@@ -272,7 +240,7 @@ span {
   text-align: center;
 }
 
-.ido-title{
+/* .ido-title{
   font-size: x-large;
   font-weight: 400;
   color: white;
@@ -340,14 +308,100 @@ span {
 
 .ido-card-container {
   display: flex;
-  /* justify-content: space-between; */
   padding: 20px;
+} */
+
+#IDOs{
+  background-color: #0a0a1a;
 }
-  .footer {
+
+.projects {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #87CEEB ;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 0.5px navy;
+  text-align: center;
+  color: #87CEEB;
+
+}
+
+.how-it-works {
+  padding: 80px 10%;
+  text-align: center;
+  color: #87CEEB;
+}
+
+/* .how-it-work{
+  display: flex;
+} */
+
+.how-it-works h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.steps .step {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.steps .step i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.steps .step h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.steps .step p {
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+.step, a{
+  text-decoration: none;
+}
+
+.step, a, i, h3{
+  color: #87CEEB;
+}
+
+/* .step {
+  text-decoration: none;
+} */
+  /* .footer {
     background-color: #2d3748;
     color: white;
     padding: 2rem 0;
-  width: 100%;}
+}
   
   
   .footer-container {
@@ -405,15 +459,69 @@ span {
     margin-top: 2rem;
     padding-top: 1rem;
     color: #718096;
-  }
+  } */
 
-#IDOs {
+/* #IDOs {
   background-image: linear-gradient(#000, rgb(66, 66, 221), rgb(22, 16, 5));
+} */
+
+footer {
+  background-color: #1a1a2e;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer .footer-logo img {
+  height: 40px;
+  padding: 0px 10px 5px 0px;
+  /* margin-bottom: 10px; */
+}
+
+.footer-logo{
+  display: flex;
+}
+
+.footer-logo, p{
+  color: whitesmoke;
+  margin-left: -20px;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+footer .footer-social a {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid #2d2d4d;
+  padding-top: 20px;
 }
 
 .how-to-participate {
   color: whitesmoke;
   /* padding: 20px; */
+  margin-left: 30px;
 }
 
 .how-to-participate, h1, ol{
@@ -427,6 +535,7 @@ span {
 .documentation{
   color: whitesmoke;
   padding: 30px;
+  margin-left: 25px;
 }
 
 .documentation, h1, h2{
@@ -437,12 +546,50 @@ span {
   padding: 10px;
 }
 
+.faq {
+  color: whitesmoke;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.mint-container, .mint-text{
+  color: whitesmoke;
+  font-size: 80px;
+  font-weight: 50;
+}
+
+.mint-container{
+  display: flex;
+  margin: 40px;
+}
+
+.mint-container, .mint-img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.mint-btn {
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 30px;
+  padding: 20px;
+  border: 1px solid navy;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 @media (max-width:884px) {
-    .nav-logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1rem;
+    nav, .logo-container{
+        padding: 20px;
+        padding-bottom: 35px;
+        padding-right: 60px;
+    }
+
+    nav{
+    max-width: 100%;
+    margin-left: 17px;
+    margin-top: 10px;
     }
 
     .nav-container .links{
@@ -482,6 +629,16 @@ span {
     font-size: large;
   }
 
+  #select-chain, #search-token{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .documentation{
+    padding-left: 40px;
+    /* text-align: center; */
+  }
+
     .blocks {
       padding: 0 15px;
     }
@@ -493,38 +650,34 @@ span {
     .blocks p {
       font-size: medium;
     }
+
+    .hero{
+      margin-left: 30px;
+    }
   
-    .footer-container {
+    footer {
+      padding: 30px 5%;
+      margin-left: 36px;
+    }
+  
+    footer .footer-content {
       flex-direction: column;
-      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
     }
   
-  .footer-text{
-    text-align: center;
-    padding: 20px;
-  }
-
-  .footer-general, .social, .footer-token {
-    padding: 20px;
-    padding-left: 130px;
-  }
-
-    .footer-heading {
-      font-size: 1.125rem;
-      margin-left: 10px;
+    footer .footer-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
     }
   
-    .footer-links {
-      font-size: 0.875rem; 
+    footer .footer-social {
+      gap: 10px;
     }
   
-    .footer-links img {
-      width: 25px; 
-      margin-right: 10px;
-    }
-  
-    .footer-bottom {
-      padding-top: 1rem;
+    footer .footer-social a {
+      font-size: 20px;
     }
   
     #IDOs > div {
@@ -540,9 +693,7 @@ span {
   
     .ido-card {
       width: 80%;
-      /* padding: 20px; */
       margin: 25px;
-      /* margin-right: -70px; */
     }
   
     .ido-img {
@@ -554,7 +705,6 @@ span {
       text-align: center;
     }
   
-    /* Adjust select and search input width */
     #select-chain, #search-token {
       width: 100%;
       margin-bottom: 10px;
@@ -566,6 +716,43 @@ span {
     .how-to-participate, li{
       padding: 5px;
     }
+
+  .project-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .steps {
+      flex-direction: column;
+  }
+
+  .steps .step {
+      width: 100%;
+  }
+
+  .mint-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .mint-text {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .mint-btn {
+    font-size: 25px;
+    padding: 15px;
+  }
+
+  .mint-container, .mint-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mint-container > div:first-child {
+    /* margin-bottom: 20px; */
+  }
 }
 
 @media (max-width:440px){
@@ -603,43 +790,37 @@ span {
     .blocks p {
       font-size: small;
     }
-    .footer-container {
-      padding: 1rem;
+    footer {
+      padding: 20px 5%;
     }
   
-    .footer-logo {
-      font-size: 1.5rem; 
+    footer .footer-content {
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
   
-    .footer-tagline {
-      font-size: 0.875rem;
-      text-align: center;
+    footer .footer-logo img {
+      height: 30px;  
     }
   
-    .footer-description {
-      font-size: 0.75rem;
-      text-align: center;
-      margin: 0 0 1rem 0;
+    footer .footer-links {
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 15px;
     }
   
-    .footer-heading {
-      font-size: 1.125rem; 
-      text-align: center;
+    footer .footer-social {
+      flex-direction: column;
+      gap: 8px;
     }
   
-    .footer-links {
-      text-align: center; 
-      font-size: 0.75rem;
+    footer .footer-social a {
+      font-size: 18px; 
     }
   
-    .footer-links img {
-      width: 20px;
-    }
-  
-    .footer-bottom {
-      padding-top: 1rem;
-      font-size: 0.75rem; 
+    footer .footer-bottom p {
+      font-size: 12px; 
     }
     .ido-btn {
       width: 120px;
@@ -647,28 +828,27 @@ span {
     }
   
     #select-chain, #search-token {
-      width: 100%;
       height: 40px;
     }
   
     .ido-card {
-      width: 90%; /* Make cards even wider */
+      width: 90%;
       padding: 15px;
     }
   
     .ido-title {
-      font-size: large; /* Decrease font size */
+      font-size: large; 
     }
   
     .ido-img {
       width: 80px;
-      height: 80px; /* Make images smaller */
+      height: 80px; 
       margin-left: 0;
     }
   
     .ido-chain-img {
       width: 30px;
-      height: 30px; /* Make chain images smaller */
+      height: 30px; 
     }
   
     .ido-status {
@@ -679,7 +859,7 @@ span {
   
     .social-links-img {
       width: 16px;
-      height: 16px; /* Smaller social icon size */
+      height: 16px; 
     }
   
     .social-link-img {
@@ -695,6 +875,29 @@ span {
       padding: 10px;
     }
 
+    .mint-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
   
+    .mint-text {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .mint-btn {
+      font-size: 20px;
+      padding: 10px;
+    }
+  
+    .mint-container, .mint-img {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .mint-container > div:first-child {
+      margin-bottom: 15px;
+    }
 }    
 }
