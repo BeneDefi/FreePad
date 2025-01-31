@@ -530,9 +530,25 @@ footer .footer-bottom {
   padding-top: 20px;
 }
 
+.footer-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #87CEEB;
+  background-color: rgba(135, 206, 235, 0.2);
+  transform: scale(1.05); 
+  text-decoration: none; 
+}
+
+.footer-social{
+  padding-left: 450px;
+}
+
 .how-to-participate {
   color: whitesmoke;
-  /* padding: 20px; */
   margin-left: 30px;
 }
 
@@ -591,10 +607,22 @@ footer .footer-bottom {
   cursor: pointer;
 }
 
-.letter{
+.letter {
   color: whitesmoke;
   padding: 20px;
   margin-left: 20px;
+}
+
+.terms{
+  color: whitesmoke;
+  padding: 30px;
+  margin-left: 30px;
+}
+
+.policy{
+  color: whitesmoke;
+  padding: 30px;
+  margin-left: 30px;
 }
 
 @media (max-width:884px) {
@@ -699,6 +727,10 @@ footer .footer-bottom {
   
     footer .footer-social a {
       font-size: 20px;
+    }
+
+    .footer-social{
+      padding-left: 110px;
     }
   
     #IDOs > div {
