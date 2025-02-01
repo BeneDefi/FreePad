@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');  */
+/* /@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');  */
 
 *{
     padding: 0;
@@ -12,6 +12,8 @@ body{
     height: 100vh;
     overflow-x: hidden;
     background-color: #0a0a1a;
+   
+    
 }
 
 nav{
@@ -144,25 +146,24 @@ nav{
 
 .links-btn{
     display: flex;
-    /* padding-right: 100px; */
+     gap: 10px;
+   
 }
 
 .link-btn{
-    height: 50px;
+    height: 40px;
     width: 150px;
     margin-top: 20px;
     color: white;
-    /* background:  linear-gradient(195.36deg, #00185c 9.49%, #000b49 50.15%, #04012b 88.8%); */
     background: linear-gradient(45deg, #FFB800, #F7931A, #FF6A00);
     cursor: pointer;
     border-radius: 10px;
     border: none;
     text-align: center;
+      font-size: 16px;
+      font-weight: bold;
 }
 
-.link-btn-a{
-    padding-left: -100px;
-}
 
 .links .link{
     margin-top: 30px;
@@ -339,18 +340,21 @@ nav{
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
   gap: 20px;
 }
 
 .project-card {
-  background-color: #1a1a2e;
+   background-color: #1a1a2e;
   padding: 20px;
   border-radius: 10px;
   border: solid 0.5px navy;
   text-align: center;
-  color: #87CEEB;
+  width: 400px;
+  color: #87CEEB; 
 
 }
 
@@ -406,76 +410,6 @@ nav{
   color: #87CEEB;
 }
 
-/* .step {
-  text-decoration: none;
-} */
-  /* .footer {
-    background-color: #2d3748;
-    color: white;
-    padding: 2rem 0;
-}
-  
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: left;
-  }
-  
-  .footer-heading {
-    display: flex;
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-text {
-    font-size: 0.875rem;
-    color: #a0aec0;
-  }
-  
-  .footer-links {
-    font-size: 0.875rem;
-    color: #a0aec0;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links img{
-    width:30px;
-    border: solid blue 1px;
-   background: blue;
-   border-radius: 50%;
-  
-  }
-  
-  .footer-linkk img{
-    background: white;
-  }
-  .footer-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.2s;
-  }
-  
-  .footer-link:hover {
-    color: #fff;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #4a5568;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    color: #718096;
-  } */
-
-/* #IDOs {
-  background-image: linear-gradient(#000, rgb(66, 66, 221), rgb(22, 16, 5));
-} */
 
 footer {
   background-color: #1a1a2e;
