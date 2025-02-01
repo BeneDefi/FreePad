@@ -487,6 +487,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -517,6 +518,8 @@ footer .footer-links a {
 
 footer .footer-social {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -803,14 +806,12 @@ footer .footer-bottom {
     height: 200px;
   }
 
-  .mint-container > div:first-child {
-    /* margin-bottom: 20px; */
-  }
+  
 }
 
 @media (max-width:440px){
   .link-btn{
-    margin-left: 39px;
+    margin-left: 39px;}
 
   .main_h1 {
       font-size: medium;
@@ -953,4 +954,3 @@ footer .footer-bottom {
       margin-bottom: 15px;
     }
 }    
-}

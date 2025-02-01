@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta name="author" content="BeneDeFi">
+  <meta charset="utf-8">
    <meta name="keywords" content="swap, Dex, cryptocurrency">
-   <meta charset="utf-8">
    <meta name="robots" content="index, follow">
    <meta name="copyright" content="2025 company.com">
-   <meta name="viewport" content="width=device-width, iniial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="decentralized exchange">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <meta name="author" content="BeneDeFi">
    <title>FreePad.io</title>
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="freepadlogo.png" type="image/x-icon">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+</head>
 <body>
         <nav>
             <div class="nav-container">
                 <div class="logo-container">
                     <div class="logo">
-                        <img class="logo-img" src="logoFreepad.png">
+                        <img class="logo-img" src="logoFreepad.png" alt="logo">
                         <div class="logo-text">Free<span>Pad</span></div>
                     </div>
                     <div id="logo-text">Simplifying Decentralized Fundraising</div>
@@ -30,8 +30,8 @@
                 <div class="link"><a href="doc.html">About &#x1F914;</a></div>
                 <div class="link"><a href="#">KYC &#128274;</a></div>
                 <div class="links-btn">
-                    <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
-                    <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                    <div class="link-btn-a"><button class="link-btn">Mint NFT</button></div>
+                    <div class="link-btn-a"><button class="link-btn">Connect Wallet &#9662;</button></div>
                    </div>
                </div>
                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -42,17 +42,18 @@
                     <a href="doc.html">About &#x1F914;</a>
                     <a href="#">KYC &#128274;</a>
                     <div class="links-btn">
-                        <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
-                        <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                        <div class="link-btn-a"><button class="link-btn">Mint NFT</button></div>
+                        <div class="link-btn-a"><button class="link-btn">Connect Wallet &#9662;</button></div>
                        </div>
                    </div>
                     <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
                 </div>
-            </div>
         </nav>
+
+        
         <main>
           <section class="hero">
-            <div class="typewriter"><span class="typewriter-text"></span><label style="color: white;" for="">|</label></div>
+            <div class="typewriter"><span class="typewriter-text"></span><label style="color: white;">|</label></div>
             <div class="hero-content">
               <p>Revolutionizing Decentralized Fundraising.</p>
               <div class="hero-buttons">
@@ -64,33 +65,35 @@
             <div style="padding: 20px;">
               <div style="display: flex; justify-content: space-around;">
                 <div id="ido-btn-container">
-                  <a href="#"><button class="ido-btn">Upcoming [0]</button></a>
-                  <a href="#"><button class="ido-btn">Ended [0]</button></a>
-                  <a href="#"><button class="ido-btn">My Participation [0]</button></a>
-                  <a href="#"><button class="ido-btn">Memes [0]</button></a>
-                  <a href="#"><button class="ido-btn">AI agents [0]</button></a>
-                  <a href="#"><button class="ido-btn">utilities [0]</button></a>
+                  <button class="ido-btn">Upcoming [0]</button>
+                  <button class="ido-btn">Ended [0]</button>
+                  <button class="ido-btn">My Participation [0]</button>
+                  <button class="ido-btn">Memes [0]</button>
+                  <button class="ido-btn">AI agents [0]</button>
+                  <button class="ido-btn">utilities [0]</button>
                 </div>
-                <div>
-                  <!-- <label> any chain &#9662;</label> -->
-                  <select id="chain-dropdown" style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="select-chain">
-                    <a href="#"</a>><option value="" >any chain</option></a>
-                    <a href="#"><option value="">Polygon<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Zksync<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Ethereum<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Arbitrum<img src="" alt=""></option></a>
-                    <a href="#"><option value="">BNB chain<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Solana<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Phantom Opera<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Terra<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Base<img src="" alt=""></option></a>
+                
+                 
+                  <select style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="select-chain">
+                    <option value="">Polygon </option>
+                   <option value="">Zksync</option>
+                    <option value="">Ethereum</option>
+                    <option value="">Arbitrum</option>
+                    <option value="">BNB chain</option>
+                    <option value="">Solana</option>
+                    <option value="">Phantom Opera</option>
+                    <option value="">Terra</option>
+                    <option value="">Base</option>
                   </select>
+
                 </div>
-                <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text"></div>
-              </div>
+                <!-- <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text"></div> -->
+            
             </div>
             <div id="projects" class="projects">
               <h2>Upcoming IDO</h2>
+            </div>
+
             <div class="project-grid">
                
                 <div data-aos="flip-up" class="project-card">
@@ -98,39 +101,14 @@
                 </div>
       
                  <div data-aos="flip-up" class="project-card">
-                    <h3>Coming soon!</h3>
-                   
-                </div>
+                    <h3>Coming soon!</h3></div>
+                    
                  <div data-aos="flip-up" class="project-card">
-                    <h3>Coming soon!</h3>
+                    <h3>Coming soon!</h3> </div>
                    
             </div>
-            </div>
-            <!-- <p style="color: white; font-size: x-large; font-weight: 300; padding: 50px;">Upcoming IDOs</p>
-            <div class="ido-card-container">
-              <div data-aos="fade-up" class="ido-card" >
-                <a href="#">
-                  <p class="ido-title"></p>
-                  <button class="ido-status"></button>
-                  <img class="ido-img" src="metaclash.png" alt="">
-                  <img class="ido-chain-img" src="polygon.png" alt="">
-                  <div class="social-link-img">
-                    <a href="#"><img class="social-links-img" src="telegram.png" alt=""></a>
-                    <a href="#"><img class="social-links-img" src="advertising.png" alt=""></a>
-                    <a href="#"><img class="social-links-img" src="twitter (1).png" alt=""></a>
-                    <a href="#"><img class="social-links-img" src="medium.png" alt=""></a>
-                    <a href="#"><img class="social-links-img" src="globe.png" alt=""></a>
-                  </div>
-                  <p class="ido-token-discription">
-                  </p>
-                  <p>
-                    Total Raise $200 002
-                    Starts Jun 29, 14:00 UTC
-                    Price  1 RAISE = 0.01500015 USDT
-                    <p></p>
-                  </p>
-                </a>
-              </div> -->
+
+           
           </section>
           <section id="how-it-works" class="how-it-works">
               <h2>How FreePad Works</h2>
@@ -161,10 +139,7 @@
         </main>
         <footer>
           <div class="footer-content">
-              <!-- <div class="footer-logo">
-                  <img class="footer-logo-img" src="logoFreepad.png" alt="FreePad Logo">
-                  <p>Simplifying decentralized fundamentals</p>
-              </div> -->
+             
               <div class="footer-links">
                   <a class="footer-link" href="doc.html">About</a>
                   <a class="footer-link" href="ido.html">How to participate in IDOs</a>
@@ -174,17 +149,17 @@
                   <a class="footer-link" href="terms.html">Terms of Use</a>
                   <a class="footer-link" href="#">Audit (in progress...)</a>
               </div>
-          </div>
-          <div class="footer-social">
+               <div class="footer-social">
             <a href="https://x.com/freepad_io?s=21"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://t.me/Freepadofficial"><i class="fa-brands fa-telegram"></i></a>
             <a href="https://medium.com/@freepad.io"><i class="fa-brands fa-medium"></i></a>
           </div>
+          </div>
+         
           <div class="footer-bottom">
               <p>&copy; 2025 FreePad. All rights reserved.</p>
           </div>
       </footer>
-        <!-- <img src="logoFreepad.png" alt=""> -->
   <script src="script.js"></script>
 </body>
 </html>
