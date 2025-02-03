@@ -11,7 +11,47 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #0a0a1a;
+    /* background-color: #0a0a1a; */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+body.light-mode p{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color:#0a0a1a;
+  color: #ffffff;
+}
+
+.toggle-img{
+  width: 2em;
+  height: 2em;
+}
+.toggle-container {
+  text-align: right;
+  padding: 5px;
+  /* padding-top: 25px; */
+  /* padding-right: 100px; */
+  margin-left: -130px;
+}
+
+.toggle-btn {
+  /* padding: 10px 20px; */
+  font-size: 1rem;
+  background-color: whitesmoke;
+  /* color: #fff; */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #0a0a1a;
 }
 
 nav{
@@ -118,9 +158,9 @@ nav{
     font-weight: 600;
 }
 
-.typewriter-text{
+/* .typewriter-text{
     color: linear-gradient(45deg, #FFB800, #F7931A, #FF6A00);;
-}
+} */
 
 .logo{
     display: flex;
@@ -144,11 +184,12 @@ nav{
 
 .links-btn{
     display: flex;
+    padding-bottom: 20px;
     /* padding-right: 100px; */
 }
 
 .link-btn{
-    height: 50px;
+    height: 40px;
     width: 150px;
     margin-top: 20px;
     color: white;
@@ -161,7 +202,9 @@ nav{
 }
 
 .link-btn-a{
-    padding-left: -100px;
+    /* padding-left: -100px; */
+    /* padding: 10px; */
+    padding-left: 10px;
 }
 
 .links .link{
@@ -169,10 +212,10 @@ nav{
 }
 
   .hero {
-    background: linear-gradient(135deg, #1a1a2e, #0a0a1a);
+    /* background: linear-gradient(135deg, #1a1a2e, #0a0a1a); */
     padding: 100px 10%;
     text-align: center;
-    color: whitesmoke;
+    /* color: whitesmoke; */
   }
 
   /* .hero::after{
@@ -237,7 +280,7 @@ nav{
   cursor: pointer;
   background: transparent;
   border: 0.5px solid navy;
-  color: white;
+  /* color: white; */
   margin-left: -7px;
   border-radius: 10px;
 }
@@ -395,7 +438,7 @@ nav{
 
 .steps .step p {
   font-size: 16px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 .step, a{
@@ -511,7 +554,7 @@ footer .footer-links {
 }
 
 footer .footer-links a {
-  color: #ffffff;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -548,7 +591,7 @@ footer .footer-bottom {
 }
 
 .how-to-participate {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   margin-left: 30px;
 }
 
@@ -561,7 +604,7 @@ footer .footer-bottom {
 }
 
 .documentation{
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 30px;
   margin-left: 25px;
 }
@@ -575,13 +618,13 @@ footer .footer-bottom {
 }
 
 .faq {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 20px;
   margin-left: 30px;
 }
 
 .mint-container, .mint-text{
-  color: whitesmoke;
+  /* color: whitesmoke; */
   font-size: 80px;
   font-weight: 50;
 }
@@ -608,22 +651,23 @@ footer .footer-bottom {
 }
 
 .letter {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 20px;
   margin-left: 20px;
 }
 
 .terms{
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 30px;
   margin-left: 30px;
 }
 
 .policy{
-  color: whitesmoke;
+  /* color: whitesmoke; */
   padding: 30px;
   margin-left: 30px;
 }
+
 
 @media (max-width:884px) {
     nav, .logo-container{
@@ -636,6 +680,7 @@ footer .footer-bottom {
     max-width: 100%;
     margin-left: 17px;
     margin-top: 10px;
+    background-color: transparent;
     }
 
     .nav-container .links{
@@ -645,6 +690,15 @@ footer .footer-bottom {
     .hamburg,
     .cancel{
         display: block;
+        color: #188ab8;
+    }
+
+    .logo-img{
+      /* margin-top: 20px; */
+      /* margin-bottom: -20px; */
+      /* height: 30px;
+      width: 30px; */
+      background-color: #F7931A;
     }
 
     section{
@@ -707,6 +761,7 @@ footer .footer-bottom {
     footer {
       padding: 30px 5%;
       margin-left: 36px;
+      background-color: transparent;
     }
   
     footer .footer-content {
@@ -719,6 +774,10 @@ footer .footer-bottom {
       flex-direction: column;
       gap: 10px;
       margin-bottom: 20px;
+    }
+
+    footer .footer-links a{
+      color: #188ab8;
     }
   
     footer .footer-social {
@@ -806,6 +865,26 @@ footer .footer-bottom {
   .mint-container > div:first-child {
     /* margin-bottom: 20px; */
   }
+
+  .toggle-container{
+    /* padding-left: 20px; */
+    margin-bottom: -12px;
+    margin-left: 15px;
+  }
+
+
+.toggle-btn:hover {
+  background-color: whitesmoke;
+}
+
+  .nav-holder {
+    margin-left: -30px;
+    margin-bottom: -15px;
+  }
+
+  .logo-text, #logo-text {
+    color: #188ab8;
+  }
 }
 
 @media (max-width:440px){
@@ -845,6 +924,7 @@ footer .footer-bottom {
     }
     footer {
       padding: 20px 5%;
+      background-color: transparent;
     }
   
     footer .footer-content {

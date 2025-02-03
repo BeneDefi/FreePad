@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <meta name="author" content="BeneDeFi">
    <meta name="keywords" content="swap, Dex, cryptocurrency">
@@ -14,13 +14,13 @@
    <link rel="icon" href="freepadlogo.png" type="image/x-icon">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+</head>
 <body>
         <nav>
             <div class="nav-container">
-                <div class="logo-container">
+                <div class="nav-holder" style="padding-bottom: 30px;">
                     <div class="logo">
-                        <img class="logo-img" src="logoFreepad.png">
+                        <img class="logo-img" src="logoFreepad.png" alt="logo-img">
                         <div class="logo-text">Free<span>Pad</span></div>
                     </div>
                     <div id="logo-text">Simplifying Decentralized Fundraising</div>
@@ -30,10 +30,13 @@
                 <div class="link"><a href="doc.html">About &#x1F914;</a></div>
                 <div class="link"><a href="#">KYC &#128274;</a></div>
                 <div class="links-btn">
-                    <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
-                    <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                    <div class="link-btn-a"><Button class="link-btn">Mint NFT</Button></div>
+                    <div class="link-btn-a"><button class="link-btn">Connect Wallet &#9662;</button></div>
                    </div>
                </div>
+               <div class="toggle-container">
+                <button class="toggle-btn" id="theme-toggle"><img class="toggle-img" src="brightness.png" alt="brightness"></button>
+              </div>
                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
                </div>
             <div class="dropdown">
@@ -42,51 +45,53 @@
                     <a href="doc.html">About &#x1F914;</a>
                     <a href="#">KYC &#128274;</a>
                     <div class="links-btn">
-                        <div class="link-btn-a"><a href="#"><Button class="link-btn">Mint NFT</Button></a></div>
-                        <div class="link-btn-a"><a href="#"><button class="link-btn">Connect Wallet &#9662;</button></a></div>
+                        <div class="link-btn-a"><Button class="link-btn">Mint NFT</Button></div>
+                        <div class="link-btn-a"><button class="link-btn">Connect Wallet &#9662;</button></div>
                        </div>
                    </div>
                     <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-                </div>
             </div>
         </nav>
         <main>
-          <section class="hero">
-            <div class="typewriter"><span class="typewriter-text"></span><label style="color: white;" for="">|</label></div>
-            <div class="hero-content">
-              <p>Revolutionizing Decentralized Fundraising.</p>
-              <div class="hero-buttons">
-                  <button class="btn-primary">NFT MINTING COMING SOON!!!</button>
+          <div>
+             <div class="hero">
+              <div class="typewriter"><span class="typewriter-text"></span><label style="color: white;">|</label></div>
+              <div class="hero-content">
+                <p>Revolutionizing Decentralized Fundraising.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">NFT MINTING COMING SOON!!!</button>
+              </div>
+              </div>
             </div>
           </div>
-          </section>
           <section class="IDOs">
             <div style="padding: 20px;">
               <div style="display: flex; justify-content: space-around;">
                 <div id="ido-btn-container">
-                  <a href="#"><button class="ido-btn">Upcoming [0]</button></a>
-                  <a href="#"><button class="ido-btn">Ended [0]</button></a>
-                  <a href="#"><button class="ido-btn">My Participation [0]</button></a>
-                  <a href="#"><button class="ido-btn">Memes [0]</button></a>
-                  <a href="#"><button class="ido-btn">AI agents [0]</button></a>
-                  <a href="#"><button class="ido-btn">utilities [0]</button></a>
+                  <button class="ido-btn">Upcoming [0]</button>
+                  <button class="ido-btn">Ended [0]</button>
+                  <button class="ido-btn">My Participation [0]</button>
+                  <button class="ido-btn">Memes [0]</button>
+                  <button class="ido-btn">AI agents [0]</button>
+                  <button class="ido-btn">utilities [0]</button>
                 </div>
                 <div>
                   <!-- <label> any chain &#9662;</label> -->
-                  <select id="chain-dropdown" style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="select-chain">
-                    <a href="#"</a>><option value="" >any chain</option></a>
-                    <a href="#"><option value="">Polygon<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Zksync<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Ethereum<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Arbitrum<img src="" alt=""></option></a>
-                    <a href="#"><option value="">BNB chain<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Solana<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Phantom Opera<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Terra<img src="" alt=""></option></a>
-                    <a href="#"><option value="">Base<img src="" alt=""></option></a>
+                  <select style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; text-align: center;" id="select-chain">
+                    <option value="" >any chain</option>
+                    <option value="">Polygon</option>
+                    <option value="">Zksync</option>
+                    <option value="">Ethereum</option>
+                    <option value="">Arbitrum</option>
+                    <option value="">BNB chain</option>
+                    <option value="">Solana</option>
+                    <option value="">Phantom Opera</option>
+                    <option value="">Terra</option>
+                    <option value="">Base</option>
                   </select>
                 </div>
-                <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; color: white; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text"></div>
+                <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text">
+                </div>
               </div>
             </div>
             <div id="projects" class="projects">
@@ -103,8 +108,8 @@
                 </div>
                  <div data-aos="flip-up" class="project-card">
                     <h3>Coming soon!</h3>
-                   
-            </div>
+                </div>
+             </div>
             </div>
             <!-- <p style="color: white; font-size: x-large; font-weight: 300; padding: 50px;">Upcoming IDOs</p>
             <div class="ido-card-container">
@@ -139,21 +144,21 @@
                       <a href="#">
                         <i class="fa-solid fa-wallet"></i>
                         <h3>Mint NFT</h3>
-                        <p>Mint a one-time access NFT</p>
+                        <h5>Mint a one-time access NFT</h5>
                       </a>
                   </div>
                   <div data-aos="zoom-in" class="step">
                       <a href="#">
                         <i class="fa-solid fa-rocket"></i>
                         <h3>Connect Wallet</h3>
-                        <p> Join IDOs</p>
+                        <h5> Join IDOs</h5>
                       </a>
                   </div>
                   <div data-aos="zoom-in" class="step">
                       <a href="#">
                         <i class="fa-solid fa-chart-line"></i>
                         <h3>Join IDOs</h3>
-                        <p>Join IDOs of your choice</p>
+                        <h5>Join IDOs of your choice</h5>
                       </a>
                   </div>
               </div>
