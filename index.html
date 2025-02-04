@@ -64,33 +64,49 @@
             </div>
           </div>
           <section class="IDOs">
-            <div style="padding: 20px;">
-              <div style="display: flex; justify-content: space-around;">
-                <div id="ido-btn-container">
-                  <button class="ido-btn">Upcoming [0]</button>
-                  <button class="ido-btn">Ended [0]</button>
-                  <button class="ido-btn">My Participation [0]</button>
-                  <button class="ido-btn">Memes [0]</button>
-                  <button class="ido-btn">AI agents [0]</button>
-                  <button class="ido-btn">utilities [0]</button>
-                </div>
-                <div>
-                  <!-- <label> any chain &#9662;</label> -->
-                  <select style="  width: 150px; height: 50px; cursor: pointer; background: transparent;border: 0.5px solid navy; color: #188ab8; text-align: center;" id="select-chain">
-                    <option value="" >any chain</option>
-                    <option value="">Polygon</option>
-                    <option value="">Zksync</option>
-                    <option value="">Ethereum</option>
-                    <option value="">Arbitrum</option>
-                    <option value="">BNB chain</option>
-                    <option value="">Solana</option>
-                    <option value="">Phantom Opera</option>
-                    <option value="">Terra</option>
-                    <option value="">Base</option>
-                  </select>
-                </div>
-                <div><input style=" padding: 10px; height: 50px;cursor: pointer; background: transparent;border: 0.5px solid navy; color: #188ab8; text-align: center;" id="search-token" placeholder=" &#128269;   search by name, token" type="text">
-                </div>
+            <div class="ido-container"  >
+              <div class="ido-search" id="ido-search-mobile">
+                <input id="search-token" type="text" placeholder="&#128269; Search by name, token">
+              </div>
+              <div class="ido-dropdown" id="ido-dropdown-mobile">
+                <select id="select-chain">
+                  <option value="">Any chain</option>
+                  <option value="">Polygon</option>
+                  <option value="">Zksync</option>
+                  <option value="">Ethereum</option>
+                  <option value="">Arbitrum</option>
+                  <option value="">BNB chain</option>
+                  <option value="">Solana</option>
+                  <option value="">Phantom Opera</option>
+                  <option value="">Terra</option>
+                  <option value="">Base</option>
+                </select>
+              </div>
+           
+              <div class="ido-buttons">
+                <button class="ido-btn">Upcoming [0]</button>
+                <button class="ido-btn">Ended [0]</button>
+                <button class="ido-btn">My Participation [0]</button>
+                <button class="ido-btn">Memes [0]</button>
+                <button class="ido-btn">AI agents [0]</button>
+                <button class="ido-btn">Utilities [0]</button>
+              </div>
+              <div class="ido-dropdown" id="ido-dropdown-desktop" >
+                <select id="select-chain">
+                  <option value="">Any chain</option>
+                  <option value="">Polygon</option>
+                  <option value="">Zksync</option>
+                  <option value="">Ethereum</option>
+                  <option value="">Arbitrum</option>
+                  <option value="">BNB chain</option>
+                  <option value="">Solana</option>
+                  <option value="">Phantom Opera</option>
+                  <option value="">Terra</option>
+                  <option value="">Base</option>
+                </select>
+              </div>
+              <div class="ido-search" id="ido-search-desktop">
+                <input id="search-token" type="text" placeholder="&#128269; Search by name, token">
               </div>
             </div>
             <div id="projects" class="projects">
