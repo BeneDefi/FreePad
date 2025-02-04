@@ -28,6 +28,14 @@ body.dark-mode {
   color: #ffffff;
 }
 
+
+nav.light-mode {
+  background-color: #f1f1f1;
+}
+
+.logo-text.light-mode {
+  color: black;
+}
 .toggle-img {
   width: 2em;
   height: 2em;
@@ -527,6 +535,9 @@ p {
   margin-left: 30px;
 }
 
+
+
+
 @media (max-width: 884px) {
   nav,
   .logo-container {
@@ -752,15 +763,20 @@ p {
   }
 
   .toggle-container {
-    visibility: visible; /* Ensure it's visible on mobile */
+    visibility: visible; 
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
     right: 20px;
     width: 40px;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    height: 25px;
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
+}
+.toggle-img {
+  width: 30px;
+  height: 100%;
+  object-fit: contain;
 }
 
   .toggle-btn:hover {
