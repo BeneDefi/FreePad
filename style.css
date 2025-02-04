@@ -15,6 +15,9 @@ body {
   overflow-x: hidden;
   transition: background-color 0.3s, color 0.3s;
 }
+main{
+  z-index: 20;
+}
 
 /* Light Mode */
 body.light-mode p {
@@ -27,7 +30,6 @@ body.dark-mode {
   background-color: #0a0a1a;
   color: #ffffff;
 }
-
 
 nav.light-mode {
   background-color: #f1f1f1;
@@ -64,10 +66,10 @@ nav {
   width: 100%;
   height: 10vh;
   position: sticky;
-  top: 10px;
-  
+  top: 0;
+  background-color: #1a1a2e;
+  padding-top: 10px;
   z-index: 1000;
-  /* background-color: #1a1a2e; */
 }
 
 .nav-container {
@@ -76,6 +78,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 9999;
 }
 
 .logo {
@@ -199,7 +202,7 @@ nav {
   width: 150px;
   margin-top: 20px;
   color: white;
-  /* background:  linear-gradient(195.36deg, #00185c 9.49%, #000b49 50.15%, #04012b 88.8%); */
+
   background: linear-gradient(45deg, #ffb800, #f7931a, #ff6a00);
   cursor: pointer;
   border-radius: 10px;
@@ -208,9 +211,7 @@ nav {
 }
 
 .link-btn-a {
-  /* padding-left: -100px; */
-  /* padding: 10px; */
-  padding-left: 10px;
+  margin-right: 10px;
 }
 
 .links .link {
@@ -290,8 +291,68 @@ nav {
   margin-left: 30px;
 }
 
+.ido-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ido-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ido-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid navy;
+  color: #188ab8;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ido-btn:hover {
+  background-color: navy;
+  color: white;
+}
+
+.ido-dropdown select {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid navy;
+  color: #188ab8;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ido-search input {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid navy;
+  color: #188ab8;
+  border-radius: 4px;
+}
+
+#ido-dropdown-mobile, 
+#ido-search-mobile {
+  display: none;
+}
+
+.ido-search input::placeholder {
+  color: #188ab8;
+}
+
 .projects {
-  margin-left: 15%;
   padding: 80px 10%;
   text-align: center;
 }
@@ -535,9 +596,6 @@ p {
   margin-left: 30px;
 }
 
-
-
-
 @media (max-width: 884px) {
   nav,
   .logo-container {
@@ -547,6 +605,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    z-index: 9999;
   }
 
   nav {
@@ -556,18 +615,20 @@ p {
     align-items: center;
     max-width: 100%;
     margin-left: 17px;
+    background-color: #1a1a2e;
     margin-top: 20px;
     background-color: transparent;
+    z-index: 9999;
   }
 
   .nav-container .links {
     display: none;
   }
-  .logo{
+  .logo {
     width: 100%;
-    display: flex;         
-    align-items: center; 
-    align-content: center;  
+    display: flex;
+    align-items: center;
+    align-content: center;
     gap: 8px;
   }
   .logo-text {
@@ -585,7 +646,7 @@ p {
     width: 50px;
     background-color: #f7931a;
   }
-  .nav-holder{
+  .nav-holder {
     width: 100%;
     padding-left: 20px;
     margin-bottom: 10px;
@@ -624,7 +685,17 @@ p {
     width: 100%;
     flex-direction: column;
   }
-
+  .link-btn {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(45deg, #ffb800, #f7931a, #ff6a00);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+  }
   .documentation {
     padding-left: 40px;
     /* text-align: center; */
@@ -686,6 +757,54 @@ p {
   #IDOs > div {
     display: block;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+#select-chain #search-token {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5px solid navy;
+  color: white;
+  text-align: center;
+}
+
+  #ido-dropdown-mobile {
+  display: block;
+  width: 80%;
+}
+#ido-search-mobile {
+  display: block;
+ 
+}
+
+#ido-dropdown-desktop,
+#ido-search-desktop{
+  display: none;
+}
+
+  .ido-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ido-buttons {
+    justify-content: center;
+  }
+
+  .ido-dropdown select {
+    width: 100%;
+  }
+
+  .ido-search input {
+    width: 100%;
+  }
+
+  .projects {
+    margin-right: 10%;
+    padding: 80px 10%;
     text-align: center;
   }
 
@@ -763,7 +882,7 @@ p {
   }
 
   .toggle-container {
-    visibility: visible; 
+    visibility: visible;
     position: fixed;
     bottom: 40px;
     right: 20px;
@@ -772,12 +891,12 @@ p {
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
-}
-.toggle-img {
-  width: 30px;
-  height: 100%;
-  object-fit: contain;
-}
+  }
+  .toggle-img {
+    width: 30px;
+    height: 100%;
+    object-fit: contain;
+  }
 
   .toggle-btn:hover {
     background-color: whitesmoke;
@@ -793,11 +912,6 @@ p {
     color: #188ab8;
   }
 }
-
-
-
-
-
 
 @media (max-width: 440px) {
   .link-btn {
